@@ -25,6 +25,10 @@
     padding-left: 22%;
     padding-top: 50px;
 
+
+    /* transition: width 2s; */
+    transition: .2s cubic-bezier(.54,-.01,.6,1.01);
+
 }
 
 .main-text {
@@ -45,9 +49,6 @@
 
 }
 
-.about-me {
-    display: flex;
-}
 
 .intro-box {
     display: flex;
@@ -57,6 +58,7 @@
     height: min-content;
     /* width: min-content; */
     justify-content: flex-start;
+    /* transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1) */
 }
 .self-intro {
     display: flex;
@@ -89,7 +91,7 @@
 }
 @keyframes shake {
     0% { transform: rotate(0deg); }
-    30% { transform: rotate(-40deg); }
+    30% { transform: rotate(-30deg); }
     30% { transform: rotate(20deg); }
     40% { transform: rotate(1deg); }
     50% { transform: rotate(20deg); }
@@ -208,8 +210,29 @@ ion-icon {
     /* text-shadow: 1ch; */
 }
 
-nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+.about-me {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.paragraph {
+    display: flex;
+    font-size: 20px;
+    line-height: 1.75rem;
+    margin: 0;
+    padding: 0;
+}
+.colorful {
+    color: #7319fa;
+    background-image: -webkit-linear-gradient(45deg, #7319fa, #ff33b4, #ff7e29);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
+}
+.current {
+    display: flex;
+    font-size: 17px;
 }

@@ -7,10 +7,15 @@
     <title>Angela's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
     
 </head>
 <body>
-    <div class="overall">
+
+    <div class="overall" data-aos="fade-up" data-aos-duration="3000">
+        
 
         <!-- <nav id="desktop-nav"> -->
             <div class="menu"> 
@@ -35,7 +40,7 @@
 
             <div class="main-text">
 
-                <div class="intro-box"> 
+                <div class="intro-box" data-aos="fade-up"> 
                     <div class="headshot">
                         <img src="./assets/headshot.jpeg" />
                     </div>
@@ -50,7 +55,13 @@
                 </div>
 
                 <div class="about-me">
-                    <h3>Hmmm... stick around to find out!</h3>
+                    <h3 class="paragraph">I'm a student at the University of Michigan, trying to build out 
+                        <br> exciting tools and products for head-scratching questions.</h3>
+                        <h3 class="current">
+                        <span class="colorful">This summer:</span>
+                        &nbsp;SWE @ AiPi Solutions, <br> &nbsp;Engineering Manager Intern @ Jara/Develop for Good, 
+                        <br> &nbsp;Web dev @ UMich Atlas Digital's internal project 🤫
+                    </h3>
                 </div>
                 
             </div>
@@ -65,5 +76,10 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="bower_components/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
