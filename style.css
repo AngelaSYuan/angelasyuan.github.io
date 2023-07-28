@@ -15,7 +15,7 @@
     height: min-content;
     justify-content: flex-start;
     overflow: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     padding: 24px;
 
     position: relative;
@@ -37,7 +37,7 @@
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 25px;
+    gap: 15px;
     height: min-content;
     justify-content: flex-start;
     overflow: visible;
@@ -115,7 +115,7 @@
     display: flex;
 }
 
-img {
+.headshot-img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -215,6 +215,7 @@ ion-icon {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 3%;
 }
 
 .paragraph {
@@ -235,4 +236,87 @@ ion-icon {
 .current {
     display: flex;
     font-size: 17px;
+}
+
+
+  
+/* Experiences */
+.header-experiences{
+    height: 10px;
+}
+
+/* Your existing CSS styles */
+
+/* Add the styles for experience cards below */
+.experience-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px; /* Increase the width of the card container */
+    margin-top: 30px;
+}
+
+/* Add the styles for experience cards below */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* Divide the card into four rows */
+    height: 260px; /* Adjust the height as needed */
+    width: 180px; /* Adjust the width as needed */
+}
+
+.experience-name {
+    font-weight: bold; /* Make the name bold */
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.image-container {
+    flex: 2; /* Increase the size of the image container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-height: 100px; /* Allow the image to fill the height of the container */
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+.tech-stack {
+    flex: 1; /* Decrease the size of the tech stack container */
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Adjust the space between items as needed */
+    justify-content: flex-start;
+    align-items: center;
+    color: #777; /* Change the color of the tech stack text to light gray */
+    font-size: 12px; /* Decrease the font size of the tech stack text */
+    grid-row: 3; /* Position the tech stack in the third row */
+    max-height: 2.2em; /* Limit the height of the tech stack to show 2 lines */
+    /* overflow: hidden; Hide any extra content beyond the 2-line limit  */
+
+    margin-top: 15px;
+    margin-bottom: -5px;
+
+}
+
+.description {
+    flex: 1; /* Decrease the size of the description container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row: 4; /* Position the description in the fourth row */
+    align-self: flex-start; /* Align the description to the top */
+}
+
+.description p {
+    font-size: 14px; /* Increase the font size of the description text */
+    /* text-align: left; */
 }
