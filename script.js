@@ -73,3 +73,68 @@ const experiences = [
   
   document.addEventListener("DOMContentLoaded", initializeExperienceSection);
   
+
+  
+  /////PROJECTS SECTION/////
+const projectsData = [
+    {
+      name: "Applicant Recruiting Dashboard",
+      imageSrc: '/assets/ad-internal-feedback.png',
+      techStack: "Tech Stack 1",
+      description: "Description of Project 1.",
+    },
+    {
+      name: "Project 2",
+      imageSrc: "path_to_your_project_image_2.jpg",
+      techStack: "Tech Stack 2",
+      description: "Description of Project 2.",
+    },
+    // Add more projects here if needed
+  ];
+  
+  // Function to create project cards
+  function createProjectCard(project) {
+    const projectCard = document.createElement("div");
+    projectCard.classList.add("project-card");
+  
+    const imageContainer = document.createElement("div");
+    imageContainer.classList.add("image-container");
+    const projectImage = document.createElement("img");
+    projectImage.src = project.imageSrc;
+    projectImage.alt = project.name;
+    imageContainer.appendChild(projectImage);
+  
+    const projectName = document.createElement("div");
+    projectName.classList.add("project-name");
+    projectName.textContent = project.name;
+  
+    const techStack = document.createElement("div");
+    techStack.classList.add("tech-stack-project");
+    techStack.textContent = project.techStack;
+  
+    const description = document.createElement("div");
+    description.classList.add("description");
+    const descriptionText = document.createElement("p");
+    descriptionText.textContent = project.description;
+    description.appendChild(descriptionText);
+  
+    projectCard.appendChild(imageContainer);
+    projectCard.appendChild(projectName);
+    projectCard.appendChild(techStack);
+    projectCard.appendChild(description);
+  
+    return projectCard;
+  }
+  
+  // Function to add projects to the DOM
+  function populateProjects(projectsData) {
+    const projectsSection = document.getElementById("projects-section");
+    projectsData.forEach((project) => {
+      const projectCard = createProjectCard(project);
+      projectsSection.appendChild(projectCard);
+    });
+  }
+  
+  // Call the function to populate projects
+  populateProjects(projectsData);
+  

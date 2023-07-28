@@ -20,6 +20,7 @@
 
     position: relative;
     width: 708px;
+    /* width: 800px; */
     z-index: 2;
     align-items: center;
     padding-left: 22%;
@@ -236,6 +237,7 @@ ion-icon {
 .current {
     display: flex;
     font-size: 17px;
+    /* margin-bottom: -5px; */
 }
 
 
@@ -265,7 +267,7 @@ ion-icon {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-rows: auto auto 1fr auto; /* Divide the card into four rows */
-    height: 260px; /* Adjust the height as needed */
+    height: 270px; /* Adjust the height as needed */
     width: 180px; /* Adjust the width as needed */
 }
 
@@ -320,3 +322,63 @@ ion-icon {
     font-size: 14px; /* Increase the font size of the description text */
     /* text-align: left; */
 }
+
+/* PROJECTS SECTION  */
+.projects-header{
+    margin-left: -50px;
+}
+#projects-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px; /* Increase the width of the card container */
+    margin-top: 30px;
+    margin-left: -59px;
+  }
+  
+  .project-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 230px;
+    width: 220px; */
+    height: 350px;
+    width: 330px;
+  }
+  
+  .project-card img {
+    max-height: 320px; /* Allow the image to fill the top half of the card */
+    max-width: 320px;
+    /* border-radius: 8px 8px 0 0; */
+    border-radius: 8px;
+  }
+  
+  .project-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+  
+  .tech-stack-project {
+    flex: 1; /* Decrease the size of the tech stack container */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust the space between items as needed */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; /* Add padding to the tech stack container */
+    color: #777; /* Change the color of the tech stack text to light gray */
+    font-size: 12px; /* Decrease the font size of the tech stack text */
+
+    margin-top: -35px;
+    margin-bottom: -35px;
+  }
+
+
+ 
