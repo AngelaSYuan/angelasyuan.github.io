@@ -256,6 +256,7 @@ ion-icon {
     gap: 20px;
     max-width: 1000px; /* Increase the width of the card container */
     margin-top: 30px;
+    margin-bottom: 25px;
 }
 
 /* Add the styles for experience cards below */
@@ -269,6 +270,9 @@ ion-icon {
     grid-template-rows: auto auto 1fr auto; /* Divide the card into four rows */
     height: 270px; /* Adjust the height as needed */
     width: 180px; /* Adjust the width as needed */
+
+    position: relative;
+    overflow: hidden; 
 }
 
 .experience-name {
@@ -325,7 +329,7 @@ ion-icon {
 
 /* PROJECTS SECTION  */
 .projects-header{
-    margin-left: -50px;
+    margin-left: 20px;
 }
 #projects-section {
     display: grid;
@@ -333,7 +337,7 @@ ion-icon {
     gap: 2rem;
     max-width: 1000px; /* Increase the width of the card container */
     margin-top: 30px;
-    margin-left: -59px;
+    /* margin-left: -19px; */
   }
   
   .project-card {
@@ -348,7 +352,9 @@ ion-icon {
     /* height: 230px;
     width: 220px; */
     height: 350px;
-    width: 330px;
+    width: 320px;
+
+    position: relative; /* Add this to position the popup link relative to the card */
   }
   
   .project-card img {
@@ -366,10 +372,10 @@ ion-icon {
   }
   
   .tech-stack-project {
-    flex: 1; /* Decrease the size of the tech stack container */
+    flex: 1; /* size of tech stack container */
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Adjust the space between items as needed */
+    gap: 10px; /* space btw items */
     justify-content: center;
     align-items: center;
     padding: 10px 0; /* Add padding to the tech stack container */
@@ -381,4 +387,50 @@ ion-icon {
   }
 
 
- 
+ .description-project {
+    flex: 1; /* Decrease the size of the description container */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row: 4; /* Position the description in the fourth row */
+    align-self: flex-start;
+    overflow: hidden; /* Hide overflowing text */
+    overflow-y: scroll;
+
+
+ }
+ .description-project p {
+    font-size: 14px; /* Increase the font size of the description text */
+    /* text-align: left; */
+}
+
+
+
+.popup-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 8px 0;
+    text-align: center;
+    opacity: 0; /* Set the initial opacity to 0 for the pop-up link */
+    pointer-events: none; /* Prevent the pop-up link from being clickable when not visible */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth fade-in and fade-out effect */
+  }
+  
+  .project-card:hover .popup-link {
+    opacity: 1; /* Set the opacity to 1 on hover to make the pop-up link visible */
+    pointer-events: auto; 
+  }
+  
+  /* Display the pop-up link on hover for both experiences and projects sections */
+  .card:hover .popup-link {
+    opacity: 1; /* Set the opacity to 1 on hover to make the pop-up link visible */
+    pointer-events: auto; /* Enable pointer events when the pop-up link is visible */
+  }
+  
+
+
+  
