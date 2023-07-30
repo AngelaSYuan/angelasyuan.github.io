@@ -112,7 +112,7 @@ function createExperienceCard(experience) {
       techStack: "React • Firebase",
       description: "Internal recruiting tool for Atlas Digital, UMich's premier tech consulting club. Building portals for students to submit essay responses, club members to provide feedback, and board members to calculate average grades for applicants & manage final offers.",
       links: [
-        { text: "Learn More", url: "https://example.com/project1" },
+        // { text: "Learn More", url: "https://example.com/project1" },
         { text: "GitHub", url: "https://github.com/your-github-repo" },
       ],
     },
