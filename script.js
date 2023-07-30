@@ -4,21 +4,30 @@ const experiences = [
       image: "../assets/183-image.png",
       techStack: "C++ • VSCode • XCode",
       description: "Holding office hours, weekly labs for 30 students, and writing exam questions. Selected out of 300 candidates.",
-      link: "https://example.com/experience1", // Add your relevant link here
+      links: [
+        { text: "Learn More", url: "https://cse.engin.umich.edu/academics/undergraduate/undergraduate-resources-and-opportunities/instructional-assistant-hiring-process/" },
+        // { text: "GitHub", url: "https://github.com/your-github-repo" },
+      ],
     },
     {
       name: "AiPi Solutions",
       image: "assets/aipi-image.jpeg",
       techStack: "React • Tailwind • Node.js • OpenAI",
       description: "Developing a full-stack web app for parsing NDA documents, providing feedback for revision.",
-      link: "https://example.com/experience1", // Add your relevant link here
+      links: [
+        { text: "Learn More", url: "https://example.com/experience1" },
+        { text: "GitHub", url: "https://github.com/your-github-repo" },
+      ],
     },
     {
       name: "Jara",
       image: "assets/jara-image.png",
       techStack: "React • Tailwind • Node.js • OpenAI",
       description: "Defining 4 core product features & timeline for off-grid edtech device, and developing games feature.",
-      link: "https://example.com/experience1", // Add your relevant link here
+      links: [
+      { text: "Learn More", url: "http://www.joinjara.com/" },
+      { text: "GitHub", url: "https://github.com/your-github-repo" },
+    ],
     },
     // Add more experiences as needed
   ];
@@ -66,13 +75,17 @@ function createExperienceCard(experience) {
     card.appendChild(description);
   
   // Create and append the pop-up link
+
   const popupLink = document.createElement("div");
   popupLink.classList.add("popup-link");
-  if (experience.link) {
-    const linkElement = document.createElement("a");
-    linkElement.href = experience.link;
-    linkElement.textContent = "Learn More"; // Change the text as needed
-    popupLink.appendChild(linkElement);
+  if (experience.links && experience.links.length > 0) {
+    experience.links.forEach((link) => {
+      const linkElement = document.createElement("a");
+      linkElement.href = link.url;
+      linkElement.textContent = link.text;
+      linkElement.target = "_blank"; // Open link in a new tab
+      popupLink.appendChild(linkElement);
+    });
   }
   card.appendChild(popupLink);
 
@@ -98,14 +111,20 @@ function createExperienceCard(experience) {
       imageSrc: '/assets/ad-internal-feedback.png',
       techStack: "React • Firebase",
       description: "Internal recruiting tool for Atlas Digital, UMich's premier tech consulting club. Building portals for students to submit essay responses, club members to provide feedback, and board members to calculate average grades for applicants & manage final offers.",
-      link: "https://example.com/project1", // Add your relevant link here
+      links: [
+        { text: "Learn More", url: "https://example.com/project1" },
+        { text: "GitHub", url: "https://github.com/your-github-repo" },
+      ],
     },
     {
       name: "Project 2",
       imageSrc: "path_to_your_project_image_2.jpg",
       techStack: "Tech Stack 2",
       description: "Description of Project 2.",
-      link: "https://example.com/project2", // Add your relevant link here
+      links: [
+        { text: "Learn More", url: "https://example.com/project1" },
+        { text: "GitHub", url: "https://github.com/your-github-repo" },
+      ],
     },
     // Add more projects here if needed
   ];
@@ -143,14 +162,17 @@ function createExperienceCard(experience) {
   
 
 //add project link
-  const popupLink = document.createElement("div");
-  popupLink.classList.add("popup-link");
-  if (project.link) {
+const popupLink = document.createElement("div");
+popupLink.classList.add("popup-link");
+if (project.links && project.links.length > 0) {
+  project.links.forEach((link) => {
     const linkElement = document.createElement("a");
-    linkElement.href = project.link;
-    linkElement.textContent = "Learn More"; // Change the text as needed
+    linkElement.href = link.url;
+    linkElement.textContent = link.text;
+    linkElement.target = "_blank"; // Open link in a new tab
     popupLink.appendChild(linkElement);
-  }
+  });
+}
   projectCard.appendChild(popupLink);
 
   return projectCard;
