@@ -299,10 +299,18 @@ ion-icon {
 }
 
 .image-container {
-    flex: 2; /* Increase the size of the image container */
+    /* Increase the size of the image container */
+    /* flex: 2;  */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+    flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
 }
 
 .image-container img {
@@ -352,9 +360,13 @@ ion-icon {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 1000px; /* Increase the width of the card container */
     margin-top: 30px;
+    max-width: 1000px; /* Increase the width of the card container */
     /* margin-left: -19px; */
+
+    gap: 2rem;
+    max-width: 1000px;
+    margin-top: 30px;
   }
   
   .project-card {
@@ -375,10 +387,10 @@ ion-icon {
   }
   
   .project-card img {
-    max-height: 320px; /* Allow the image to fill the top half of the card */
-    max-width: 320px;
-    /* border-radius: 8px 8px 0 0; */
-    border-radius: 8px;
+    max-height: 100%; /* Allow the image to fill the height of the container */
+    max-width: 100%;
+    width: auto; /* Add this to maintain the image's aspect ratio */
+    height: auto; /* Add this to maintain the image's aspect ratio */
   }
   
   .project-name {
@@ -450,20 +462,32 @@ ion-icon {
   
 
 
-  
 
   /* ... Existing styles ... */
 
 /* Style for the link container */
 .popup-link {
     display: flex;
-    flex-direction: column; /* This will stack the links vertically */
     gap: 0.5rem; /* Adjust the gap between the links as needed */
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    gap: 0.5rem; /* Adjust the gap between the links as needed */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 8px 0;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
   }
   
   /* Style for the individual links */
   .popup-link a {
-    display: block; /* Make each link a block-level element */
+    /* display: block;  */
+    display: inline-block; /* Display links in a single line */
     text-decoration: none;
     color: darkslateblue;
     font-size: 14px;
@@ -475,3 +499,14 @@ ion-icon {
   
   /* ... Existing styles ... */
   
+
+  a:link {
+    color: #145DA0;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #145DA0;
+    background-color: transparent;
+    text-decoration: none;
+  }

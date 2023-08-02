@@ -117,13 +117,13 @@ function createExperienceCard(experience) {
       ],
     },
     {
-      name: "Project 2",
-      imageSrc: "path_to_your_project_image_2.jpg",
-      techStack: "Tech Stack 2",
-      description: "Description of Project 2.",
+      name: "V1 Startup Directory",
+      imageSrc: "/assets/v1-SRMS.png",
+      techStack: "React, Python, SQL, Supabase, Next.js",
+      description: "Building go-to place for UMich student startups & projects. Developing the Supabase schema -> adding in middleware routes with V1's API -> ability for verified students to post their initiatives.",
       links: [
-        { text: "Learn More", url: "https://example.com/project1" },
-        { text: "GitHub", url: "https://github.com/your-github-repo" },
+        { text: "Learn More", url: "https://v1michigan.com/" },
+        { text: "GitHub", url: "https://github.com/V1Michigan" },
       ],
     },
     // Add more projects here if needed
