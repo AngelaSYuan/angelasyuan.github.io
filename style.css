@@ -164,7 +164,7 @@
 .backdrop {
     position: absolute;
     z-index: -1;
-    width: 100%;
+    width: 98%;
     background: #DCD6D0;
     opacity: 0.3;
     border-radius: 13px;
@@ -497,16 +497,15 @@ ion-icon {
     color: darkblue;
   }
   
-  /* ... Existing styles ... */
-  
 
-  a:link {
+  
+a.portfolio-link-doc 
+ a:link {
     color: #145DA0;
     background-color: transparent;
     text-decoration: underline;
   }
-  a:visited {
-    color: #145DA0;
-    background-color: transparent;
-    text-decoration: none;
+  a.portfolio-link-doc:visited {
+    color: #00FF00; /* Change the color for the visited targeted link */
+    /* Add any other styles for the visited targeted link if needed */
   }

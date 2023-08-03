@@ -190,3 +190,22 @@ if (project.links && project.links.length > 0) {
   // Call the function to populate projects
   populateProjects(projectsData);
   
+  //For smooth scrolling, menu bar part
+  document.querySelector('.nav-links').addEventListener('click', function(event) {
+    if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
+      event.preventDefault();
+      const href = event.target.getAttribute('href');
+      if (href === '#work-header') {
+        const targetElement = document.querySelector(href);
+        const offsetTop = targetElement.getBoundingClientRect().top;
+        const navbarHeight = document.querySelector('.menu').offsetHeight;
+        const scrollPosition = offsetTop + window.scrollY - navbarHeight;
+    
+        window.scroll({
+          top: scrollPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+  });
+  
