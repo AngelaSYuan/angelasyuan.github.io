@@ -25,7 +25,7 @@ const experiences = [
       techStack: "React • Tailwind • Node.js • OpenAI",
       description: "Defining 4 core product features & timeline for off-grid edtech device, and developing games feature.",
       links: [
-      { text: "Learn More", url: "http://www.joinjara.com/" },
+      { text: "Video Overview", url: "https://youtu.be/nvXSoP0UP1I" },
       { text: "GitHub", url: "https://github.com/your-github-repo" },
     ],
     },
