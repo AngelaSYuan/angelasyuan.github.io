@@ -109,7 +109,7 @@ function createExperienceCard(experience) {
     {
       name: "Applicant Recruiting Dashboard",
       imageSrc: '/assets/ad-internal-feedback.png',
-      techStack: "React • Firebase",
+      techStack: "React • Javascript • Firebase",
       description: "Internal recruiting tool for Atlas Digital, UMich's premier tech consulting club. Building portals for students to submit essay responses, club members to provide feedback, and board members to calculate average grades for applicants & manage final offers.",
       links: [
         // { text: "Learn More", url: "https://example.com/project1" },
@@ -119,8 +119,8 @@ function createExperienceCard(experience) {
     {
       name: "V1 Startup Directory",
       imageSrc: "/assets/v1-SRMS.png",
-      techStack: "React, Python, SQL, Supabase, Next.js",
-      description: "Building the go-to place for UMich student startups & projects. Developing the Supabase schema -> adding in middleware routes with V1's API -> ability for verified students to post their initiatives.",
+      techStack: "React • Python • SQL • Supabase • Next.js",
+      description: "Building the go-to place for UMich student startups & projects. Developing the Supabase schema -> adding in middleware routes with V1's API -> ability for verified students to post their startups.",
       links: [
         { text: "Learn More", url: "https://v1michigan.com/" },
         { text: "GitHub", url: "https://github.com/V1Michigan" },
