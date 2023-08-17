@@ -26,7 +26,8 @@ const experiences = [
       description: "Defining 4 core product features & timeline for off-grid edtech device, and developing games feature.",
       links: [
       { text: "Video Overview", url: "https://youtu.be/nvXSoP0UP1I" },
-      { text: "GitHub", url: "https://github.com/your-github-repo" },
+      //NOTE TO SELF: MAKE A COPY OF OURJARA CASE STUDY NOTION, AND PASTE IT IN HERE:
+      { text: "Final deliverable", url: "https://github.com/your-github-repo" },
     ],
     },
     // Add more experiences as needed
