@@ -9,25 +9,34 @@ const experiences = [
         // { text: "GitHub", url: "https://github.com/your-github-repo" },
       ],
     },
+    
     {
-      name: "AiPi Solutions",
-      image: "assets/aipi-image.jpeg",
-      techStack: "React • Tailwind • Node.js • OpenAI",
-      description: "Developing a full-stack web app for parsing NDA documents, providing feedback for revision.",
+      name: "Atlassian",
+      image: "assets/atlassian-logo.png",
+      techStack: "Typescript • Node.js • Splunk • AWS SQS • WireMock",
+      description: "Worked on backend of Comet, a new project helping to automate Bitbucket CI pipelines.",
       links: [
-        { text: "Learn More", url: "https://example.com/experience1" },
-        { text: "GitHub", url: "https://github.com/your-github-repo" },
-      ],
+      { text: "Learn about Bitbucket Pipelines", url: "https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/" },
+    ],
     },
+    // {
+    //   name: "AiPi Solutions",
+    //   image: "assets/aipi-image.jpeg",
+    //   techStack: "React • Tailwind • Node.js • OpenAI",
+    //   description: "Developing a full-stack web app for parsing NDA documents, providing feedback for revision.",
+    //   links: [
+    //     { text: "Learn More", url: "https://example.com/experience1" },
+    //     { text: "GitHub", url: "https://github.com/your-github-repo" },
+    //   ],
+    // },
     {
       name: "Jara",
       image: "assets/jara-image.png",
       techStack: "React • Tailwind • Node.js • OpenAI",
-      description: "Defining 4 core product features & timeline for off-grid edtech device, and developing games feature.",
+      description: "Developed 4 core features for off-grid edtech device, and built flagship reinforcement learning feature.",
       links: [
       { text: "Video Overview", url: "https://youtu.be/nvXSoP0UP1I" },
-      //NOTE TO SELF: MAKE A COPY OF OURJARA CASE STUDY NOTION, AND PASTE IT IN HERE:
-      { text: "Final deliverable", url: "https://github.com/your-github-repo" },
+      { text: "Final deliverable", url: "https://drive.google.com/file/d/1jspuCBrcr7aq_KdMp-6GMRCj5yWp33Sq/view?usp=sharing" },
     ],
     },
     // Add more experiences as needed
@@ -128,6 +137,17 @@ function createExperienceCard(experience) {
       ],
     },
     // Add more projects here if needed
+    {
+      name: "PantryPuzzle",
+      imageSrc: "/assets/hackmit.png",
+      techStack: "React • Python • OpenAI",
+      description: "1st place in sustainability track at hackMIT. Full-stack platform addressing food waste in homes/grocery stores, integrated computer vision OCR to identify food items and parse expiration dates, and OpenAI GPT-3 DaVinci for recipe generation. Notified about nearly expired foods, and auto-populated nearby non-profits for food donations. ",
+      links: [
+        { text: "Devpost", url: "https://devpost.com/software/pantrypuzzle" },
+        { text: "GitHub", url: "https://github.com/gaurab1/PantryPuzzle/tree/main" },
+        { text: "Demo", url: "https://youtu.be/L6nTEobtefs" },
+      ],
+    },
   ];
   
   // Function to create project cards

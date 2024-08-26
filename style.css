@@ -250,6 +250,7 @@ ion-icon {
     -webkit-background-clip: text;
     /* text-fill-color: transparent; */
     -webkit-text-fill-color: transparent;
+    margin-right: 10px;
 }
 .current {
     display: flex;
@@ -257,7 +258,10 @@ ion-icon {
     /* margin-bottom: -5px; */
 }
 
-
+/* .subheading {
+  display: flex;
+  font-size: 14px;
+} */
   
 /* Experiences */
 .header-experiences{
@@ -484,28 +488,3 @@ ion-icon {
     transition: opacity 0.3s ease-in-out;
   }
   
-  /* Style for the individual links */
-  .popup-link a {
-    /* display: block;  */
-    display: inline-block; /* Display links in a single line */
-    text-decoration: none;
-    color: darkslateblue;
-    font-size: 14px;
-    /* Add any other styles you want for the links */
-  }
-  .popup-link a:hover  {
-    color: darkblue;
-  }
-  
-
-  
-a.portfolio-link-doc 
- a:link {
-    color: #145DA0;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  a.portfolio-link-doc:visited {
-    color: #00FF00; /* Change the color for the visited targeted link */
-    /* Add any other styles for the visited targeted link if needed */
-  }
