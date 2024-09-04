@@ -5,6 +5,7 @@ const experiences = [
       techStack: "C++ • VSCode • XCode",
       description: "Holding office hours, weekly labs for 30 students, and writing exam questions. Selected out of 300 candidates.",
       links: [
+        {text: "Teaching Sample Video", url: "https://youtu.be/8KidiWn81Bg"},
         { text: "Learn More", url: "https://cse.engin.umich.edu/academics/undergraduate/undergraduate-resources-and-opportunities/instructional-assistant-hiring-process/" },
         // { text: "GitHub", url: "https://github.com/your-github-repo" },
       ],
