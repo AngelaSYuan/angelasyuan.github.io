@@ -118,13 +118,24 @@ function createExperienceCard(experience) {
   /////PROJECTS SECTION/////
   const projectsData = [
     {
+      name: "Unmute",
+      imageSrc: '/assets/unmute.png',
+      techStack: "Typescript • Flask • FFmpeg • Symphonic Labs API • MediaRecorder API",
+      description: "Using lipreading technology, Unmute is designed for those private moments during video calls when you can't speak out loud, yet still want to fully participate in the conversation. (Note: Symphonic Labs' API is currently private, so some features may not be functional. Our website will be updated as soon as it is released publicly!)",
+      links: [
+        { text: "Website", url: "https://unmutenow.co/" },
+        { text: "Figma", url: "https://www.figma.com/design/4ZLrmRjBBC1b9w1KkYkChE/Hack-the-North?node-id=0-1&node-type=canvas&t=EC7XpGGIbgTyZpHB-0"},
+        { text: "Devpost", url: "https://devpost.com/software/unmute-speak-even-when-you-can-t" },
+      ],
+    },
+    {
       name: "Applicant Recruiting Dashboard",
       imageSrc: '/assets/ad-internal-feedback.png',
       techStack: "React • Javascript • Firebase",
       description: "Internal recruiting tool for Atlas Digital, UMich's premier tech consulting club. Building portals for students to submit essay responses, club members to provide feedback, and board members to calculate average grades for applicants & manage final offers.",
       links: [
-        // { text: "Learn More", url: "https://example.com/project1" },
-        { text: "GitHub", url: "https://github.com/your-github-repo" },
+         { text: "Website", url: "https://www.portal.atlasdigital.org/" },
+        // { text: "GitHub", url: "https://github.com/your-github-repo" },
       ],
     },
     {
